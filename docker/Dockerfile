@@ -14,6 +14,5 @@ RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 WORKDIR /work
 #SSH 포트 노출
 EXPOSE 22
-EXPOSE 9090
 #SSH 서비스 실행
 CMD ["/usr/sbin/sshd", "-D"]
